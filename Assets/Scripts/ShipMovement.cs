@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,27 +27,23 @@ public class ShipMovement : MonoBehaviour
         // transform the ship
         Accelerate(yAxis);
         Rotate(-xAxis * rotationSpeed);
+
+        // clamp the ship's position within the camera's frame
+        //ClampPosition();
     }
 
     private void Accelerate(float accel)
     {
         // add force to the ship
-        Vector2 force = transform.up * accel;
-        rb.AddForce(force);
+        Vector2 force = transform.up * accel * 10;  // Multiplied by 10 for stronger force
+        rb.AddForce(force);  // Removed ForceMode2D.Impulse for default ForceMode2D.Force
     }
 
-    private void ClampVelocity()
-    {
-        float x = Mathf.Clamp(rb.velocity.x, -velocityCap, velocityCap);
-        float y = Mathf.Clamp(rb.velocity.y, -velocityCap, velocityCap);
 
-        rb.velocity = new Vector2(x, y);
-    }
 
     private void Rotate(float rotation)
     {
         // rotate the ship
         transform.Rotate(0, 0, rotation);
     }
-
 }
