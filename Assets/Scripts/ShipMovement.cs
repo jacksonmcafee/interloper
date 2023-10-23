@@ -17,6 +17,13 @@ public class ShipMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+     private void ClampVelocity()
+    {
+        float x = Mathf.Clamp(rb.velocity.x, -velocityCap, velocityCap);
+        float y = Mathf.Clamp(rb.velocity.y, -velocityCap, velocityCap);
+
+        rb.velocity = new Vector2(x, y);
+    }
 
     private void Update()
     {
@@ -29,7 +36,7 @@ public class ShipMovement : MonoBehaviour
         Rotate(-xAxis * rotationSpeed);
 
         // clamp the ship's position within the camera's frame
-        //ClampPosition();
+        ClampVelocity();
     }
 
     private void Accelerate(float accel)
