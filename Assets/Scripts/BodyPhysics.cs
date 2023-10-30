@@ -12,8 +12,8 @@ public class BodyPhysics : MonoBehaviour
     static float G;
 
     //we always want our bodies to be affected by gravity
-    public static List<Rigidbody2D> bodies = new List<Rigidbody2D>();
-
+    //public static List<Rigidbody2D> bodies = new List<Rigidbody2D>();
+    public static List<CelestialBody> celbodies = new List<CelestialBody>();
     void FixedUpdate()
     {
         //realtime updates to g
@@ -27,17 +27,17 @@ public class BodyPhysics : MonoBehaviour
     //iterate through the list of all existing bodies and apply gravity to them
     public static void applyGravity()
     {
-        for (int i = 0; i < bodies.Count; i++)
+        for (int i = 0; i < celbodies.Count; i++)
         {
-            for (int j = i+1; j < bodies.Count; j++)
+            for (int j = i+1; j < celbodies.Count; j++)
             {
-                gravAttract(bodies[i],bodies[j]);
+                gravAttract(celbodies[i].rigbod, celbodies[j].rigbod, celbodies[i].is_gravity_biased);
             }
         }
     }
 
     //apply a gravitational force between two bodies, accelerating both
-    public static void gravAttract(Rigidbody2D M, Rigidbody2D m)
+    public static void gravAttract(Rigidbody2D M, Rigidbody2D m, bool biased)
     {
         //position difference as a 2d vector
         Vector3 position_difference = M.position - m.position;
@@ -62,7 +62,10 @@ public class BodyPhysics : MonoBehaviour
 
         //force vector is simply magnitude * direction
         m.AddForce(magnitude * direction);
-        M.AddForce(magnitude * (-direction));   
+        if(!biased)
+        {
+            M.AddForce(magnitude * (-direction));   
+        }
     }
 
 }

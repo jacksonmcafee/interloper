@@ -8,7 +8,7 @@ public class ShipMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     // movement velocity cap
-    public float velocityCap = 1f;
+    public float velocityCap = 2f;
 
     // rotation speed (might need to add a cap)
     public float rotationSpeed = 0.5f;

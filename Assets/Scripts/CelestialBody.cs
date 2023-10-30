@@ -9,7 +9,7 @@ using UnityEngine;
 public class CelestialBody : MonoBehaviour
 {
     //our body must be some rigidbody2d object
-    Rigidbody2D celbod;
+    public Rigidbody2D rigbod;
 
     //determine whether this body should be influenced by gravity
     public bool is_gravity_affected 
@@ -24,22 +24,40 @@ public class CelestialBody : MonoBehaviour
         {
             if(value==true)
             {
-                if(!BodyPhysics.bodies.Contains(this.GetComponent<Rigidbody2D>()))
+                if(!BodyPhysics.celbodies.Contains(this))
                 {
-                    BodyPhysics.bodies.Add(celbod);
+                    BodyPhysics.celbodies.Add(this);
                 }
                 
             }
             else if(value==false)
             {
-                BodyPhysics.bodies.Remove(celbod);
+                BodyPhysics.celbodies.Remove(this);
             }
             is_gravity_affected_f = value;
         }
     }
 
+    //determine whether this body should be unequally influenced by gravity, not allowing other bodies to pull it
+    public bool is_gravity_biased
+    {
+        //get checkbox field from editor
+        get
+        {
+            return is_gravity_biased_f;
+        }
+        //if we don't already have this body in the bodies list, add it
+        set
+        {
+            is_gravity_biased_f = value;
+        }
+    }
+
     //create gravity affected field
     [SerializeField] bool is_gravity_affected_f; 
+
+    //create gravity biased field
+    [SerializeField] bool is_gravity_biased_f; 
 
     //declare initial velocity and enable boolean
     [SerializeField] Vector3 initial_velocity;
@@ -48,13 +66,14 @@ public class CelestialBody : MonoBehaviour
     //handle script being loaded
     void Awake()
     {
-        celbod = this.GetComponent<Rigidbody2D>();
+        rigbod = this.GetComponent<Rigidbody2D>();
     }
 
     //handle script being enabled
     void OnEnable()
     {
         is_gravity_affected = is_gravity_affected_f;
+        is_gravity_biased = is_gravity_biased_f;
     }
 
     //handle start: on start apply initial velocity if enabled
@@ -62,14 +81,14 @@ public class CelestialBody : MonoBehaviour
     {
         if(apply_initial_velocity)
         {
-            celbod.AddForce(initial_velocity,ForceMode2D.Impulse);
+            rigbod.AddForce(initial_velocity,ForceMode2D.Impulse);
         }
             
     }
 
-    //handle disabling: remove celbod from list
+    //handle disabling: remove celbody from list
     void OnDisable()
     {
-        BodyPhysics.bodies.Remove(celbod);
+        BodyPhysics.celbodies.Remove(this);
     }
 }
