@@ -10,6 +10,15 @@ public class CelestialBody : MonoBehaviour
 {
     //our body must be some rigidbody2d object
     public Rigidbody2D rigbod;
+    //create gravity affected field
+    [SerializeField] bool is_gravity_affected_f; 
+
+    //create gravity biased field
+    [SerializeField] bool is_gravity_biased_f; 
+
+    //declare initial velocity and enable boolean
+    [SerializeField] public Vector3 initial_velocity;
+    [SerializeField] bool apply_initial_velocity;
 
     //determine whether this body should be influenced by gravity
     public bool is_gravity_affected 
@@ -53,15 +62,6 @@ public class CelestialBody : MonoBehaviour
         }
     }
 
-    //create gravity affected field
-    [SerializeField] bool is_gravity_affected_f; 
-
-    //create gravity biased field
-    [SerializeField] bool is_gravity_biased_f; 
-
-    //declare initial velocity and enable boolean
-    [SerializeField] Vector3 initial_velocity;
-    [SerializeField] bool apply_initial_velocity;
 
     //handle script being loaded
     void Awake()

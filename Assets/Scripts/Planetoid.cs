@@ -27,6 +27,8 @@ public class Planetoid : CelestialBody
 
     public void makeDebris(int quantity, Collision2D collision)
     {
+        //gameObject.initial_velocity = collision.relativeVelocity;
+
         for(int i = 0; i < quantity; i++)
         {
             Instantiate(gameObject, collision.transform.position + new Vector3 (collision.relativeVelocity.x, collision.relativeVelocity.y, 0), Quaternion.identity);

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 32bd049222fe3724cb2c8f58450d4f4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - singularityPrefab: {fileID: 6725053358958304988, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
+  - planetoidPrefab: {fileID: 1412911217987195021, guid: b30ac0d47fd043d4f9b0e87ca88ec7fa, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
