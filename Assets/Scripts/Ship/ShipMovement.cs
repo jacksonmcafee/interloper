@@ -46,8 +46,6 @@ public class ShipMovement : MonoBehaviour
         rb.AddForce(force);  // Removed ForceMode2D.Impulse for default ForceMode2D.Force
     }
 
-
-
     private void Rotate(float rotation)
     {
         // rotate the ship
