@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4817939765704300928}
   - component: {fileID: 3439750730233235893}
   - component: {fileID: 2566157512522898371}
+  - component: {fileID: 713001301948041389}
   - component: {fileID: -1383539378238694805}
   m_Layer: 0
   m_Name: PlayerShip
@@ -129,6 +130,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityCap: 1
   rotationSpeed: 0.5
+--- !u!114 &713001301948041389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100961401203607748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf5362ae340ec7418b91b43f00b0b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4817939765704300928}
+  tr: {fileID: 0}
+  laserPrefab: {fileID: 0}
+  rocketPrefab: {fileID: 0}
 --- !u!61 &-1383539378238694805
 BoxCollider2D:
   m_ObjectHideFlags: 0

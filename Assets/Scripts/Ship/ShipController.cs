@@ -62,11 +62,9 @@ public class ShipController : MonoBehaviour
     rocketRB.velocity = transform.up * rocket.speed;
   }
 
-  public void FireLaser()
-  {
-    // instantiate object laser 
-    
-    GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);  
+public void FireLaser()
+{
+    GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);
     Laser laser = newLaser.GetComponent<Laser>();
     Rigidbody2D laserRB = newLaser.GetComponent<Rigidbody2D>();
 
@@ -74,7 +72,8 @@ public class ShipController : MonoBehaviour
     laser.damage = 10;
 
     laserRB.velocity = transform.up * laser.speed;
-  }
+}
+
 
   // handle different collisions
   private void OnCollisionEnter2D(Collision2D collision)
