@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 9090696476641066230}
   - component: {fileID: 7480760605306679820}
   - component: {fileID: 8843940427805314331}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Planetoid
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488eedc493d00d64a929686d5b055824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigbod: {fileID: 0}
   is_gravity_affected_f: 1
+  is_gravity_biased_f: 0
   initial_velocity: {x: 0, y: 0, z: 0}
   apply_initial_velocity: 0
+  debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
+  destroyed: 0

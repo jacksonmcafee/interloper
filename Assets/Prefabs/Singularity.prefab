@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 575811104711285002}
   - component: {fileID: 8639964483832975918}
   - component: {fileID: 19697555238678809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Singularity
-  m_TagString: Untagged
+  m_TagString: Singularity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c5586668914da04cbd47255b788de52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e30418ebe9c79274b9e104ffdddf1e1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d61920fbe11c124fb6814e80746a014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigbod: {fileID: 0}
   is_gravity_affected_f: 1
+  is_gravity_biased_f: 0
   initial_velocity: {x: 0, y: 0, z: 0}
   apply_initial_velocity: 0
 --- !u!58 &19697555238678809

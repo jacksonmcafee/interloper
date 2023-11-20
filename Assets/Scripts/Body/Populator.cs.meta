@@ -4,8 +4,12 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - singularityPrefab: {fileID: 6725053358958304988, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
-  - planetoidPrefab: {fileID: 1412911217987195021, guid: b30ac0d47fd043d4f9b0e87ca88ec7fa, type: 3}
+  - RSML: {fileID: 1412911217987195021, guid: 227a4f10ef6db904b9c1859cde5517e6, type: 3}
+  - RMED: {fileID: 1412911217987195021, guid: 2dbdd6a25fa75384596993c6c6bc3c10, type: 3}
+  - RLRG: {fileID: 1412911217987195021, guid: fdc979a18dcf9bc43bf18fd018ce215e, type: 3}
+  - GSML: {instanceID: 0}
+  - GMED: {instanceID: 0}
+  - GLRG: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Planet
+  - Singularity
+  - Debris
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -15,10 +19,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Actors
+  - Environment
+  - Player
+  - Projectiles
   - 
   - 
   - 

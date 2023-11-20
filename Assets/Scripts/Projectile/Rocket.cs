@@ -17,8 +17,9 @@ public class Rocket : Projectile
     Destroy(gameObject);
   }
 
-  public override void HandleCollision(Collider2D other)
+  /*public override void HandleCollision(Collider2D other)
   {
-    // define Rocket collision behavior 
-  }
+    // handle Rocket collision behavior
+
+  }*/
 }

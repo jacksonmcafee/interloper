@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2566157512522898371}
   - component: {fileID: 713001301948041389}
   - component: {fileID: -1383539378238694805}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlayerShip
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -144,8 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4817939765704300928}
   tr: {fileID: 0}
-  laserPrefab: {fileID: 0}
-  rocketPrefab: {fileID: 0}
+  laserPrefab: {fileID: 3068881508333881757, guid: c0bdf758dbd1fdb4886d961ad5dd510f, type: 3}
+  rocketPrefab: {fileID: 774720285590209984, guid: ff968c57a6debbd478b64d28f969b462, type: 3}
 --- !u!61 &-1383539378238694805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7966477583591487427}
   - component: {fileID: 1093205958142716948}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6994994391699878366}
   - component: {fileID: 394780031655730487}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Missle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117212096813652234}
   - component: {fileID: 2034486029553214015}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4001347411087877428}
   - component: {fileID: 8874288219977327178}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tether
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6685902863984564158}
   - component: {fileID: 4746097967140687824}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Graviton
   m_TagString: Untagged
   m_Icon: {fileID: 0}

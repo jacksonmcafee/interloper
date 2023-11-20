@@ -21,8 +21,9 @@ public class Projectile : MonoBehaviour
         rb.velocity = transform.up * speed;
     }
 
-    public virtual void HandleCollision(Collider2D other)
+    public virtual void OnCollisionEnter2D(Collision2D collision)
     {
         // Collision handling logic
+        Destroy(gameObject);
     }
 }

@@ -8,5 +8,10 @@ using UnityEngine;
 
 public class Singularity : CelestialBody
 {
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log(collision.otherRigidbody.mass);
+        //Debug.Log(collision.relativeVelocity.magnitude);
+        //Destroy(collision.gameObject);
+    }
 }

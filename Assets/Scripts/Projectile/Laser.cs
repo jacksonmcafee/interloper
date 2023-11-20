@@ -17,9 +17,9 @@ public class Laser : Projectile
     Destroy(gameObject);
   }
 
-  public override void HandleCollision(Collider2D other)
+  /*public override void HandleCollision(Collider2D other)
   {
     // handle Laser collision behavior
 
-  }
+  }*/
 }
