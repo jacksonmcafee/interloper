@@ -37,7 +37,6 @@ public class CelestialBody : MonoBehaviour
                 {
                     BodyPhysics.celbodies.Add(this);
                 }
-                
             }
             else if(value==false)
             {
@@ -62,7 +61,6 @@ public class CelestialBody : MonoBehaviour
         }
     }
 
-
     //handle script being loaded
     void Awake()
     {
@@ -83,7 +81,6 @@ public class CelestialBody : MonoBehaviour
         {
             rigbod.AddForce(initial_velocity,ForceMode2D.Impulse);
         }
-            
     }
 
     //handle disabling: remove celbody from list

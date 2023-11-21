@@ -169,3 +169,4 @@ MonoBehaviour:
   debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
   destroyed: 0
   size: 1
+  health: 20
