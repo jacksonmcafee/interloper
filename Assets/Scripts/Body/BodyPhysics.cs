@@ -29,9 +29,12 @@ public class BodyPhysics : MonoBehaviour
     {
         for (int i = 0; i < celbodies.Count; i++)
         {
-            for (int j = i+1; j < celbodies.Count; j++)
+            for (int j = 0; j < celbodies.Count; j++)
             {
-                gravAttract(celbodies[i].rigbod, celbodies[j].rigbod, celbodies[i].is_gravity_biased);
+                if(i != j && !(celbodies[j].is_gravity_biased))
+                {
+                    gravAttract(celbodies[i].rigbod, celbodies[j].rigbod, celbodies[i].is_gravity_biased);
+                }
             }
         }
     }
@@ -62,10 +65,13 @@ public class BodyPhysics : MonoBehaviour
 
         //force vector is simply magnitude * direction
         m.AddForce(magnitude * direction);
+        Debug.DrawLine(M.position, m.position, Color.blue, 0f);
         if(!biased)
         {
-            M.AddForce(magnitude * (-direction));   
+            M.AddForce(magnitude * (-direction));
+            Debug.DrawLine(M.position, m.position, Color.red, 0f);
         }
+
     }
 
 }

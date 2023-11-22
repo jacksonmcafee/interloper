@@ -13,6 +13,8 @@ public class Planetoid : CelestialBody
 
     public int size;
 
+    public float health;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         ContactPoint2D contact = collision.GetContact(0);
@@ -26,7 +28,6 @@ public class Planetoid : CelestialBody
         Debug.Log(collision.transform.position);         //flipped
         Debug.Log(collision.otherRigidbody.position);    //flipped
         //if(collision.gameObject.GetComponent<CircleCollider2D>().radius >= gameObject.GetComponent<CircleCollider2D>().radius)
-
         if (!destroyed)
         {
             Debug.Log("not destroyed, hit check...");
@@ -51,11 +52,21 @@ public class Planetoid : CelestialBody
             }
             else if(collision.gameObject.tag == "Projectile")
             {
-                Destroy(gameObject);
-                makeDebris(collision);
+                Projectile pscript = collision.gameObject.GetComponent<Projectile>();
+                if (pscript != null) 
+                {
+                    health -= pscript.damage;
+                    if(health <= 0)
+                    {
+                        Debug.Log("breaking...");
+                        destroyed = true;
+                        Destroy(gameObject);
+                        makeDebris(collision);
+                    }
+                }
             }
         }
-        else
+        else if (destroyed)
         {
             Debug.Log("i shouldn't exist...");
             Destroy(gameObject); //we shouldn't exist right now

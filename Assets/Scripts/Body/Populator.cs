@@ -19,10 +19,11 @@ public class Populator : MonoBehaviour
         //Instantiate(singularityPrefab, new Vector2(0, 0), Quaternion.identity);
 
         // Instantiate a bunch of planetoids at random positions.
-        //for(int i = 0; i < 20; i++)
-        //{   
-        //    GameObject planet = Instantiate(RMED, new Vector2(Random.Range(-15,15), Random.Range(-15,15)), Quaternion.identity);
-        //    planet.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-2.5f,2.5f), Random.Range(-2.5f,2.5f)),ForceMode2D.Impulse);
-        //}
+        /*for(int i = 0; i < 30; i++)
+        {
+            GameObject planet = Instantiate(TYPE, new Vector2(Random.Range(-100,100), Random.Range(-100,100)), Quaternion.identity);
+            
+            planet.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-2.5f,2.5f), Random.Range(-2.5f,2.5f)),ForceMode2D.Impulse);
+        }*/
     }
 }

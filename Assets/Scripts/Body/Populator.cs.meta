@@ -5,11 +5,11 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - RSML: {fileID: 1412911217987195021, guid: 227a4f10ef6db904b9c1859cde5517e6, type: 3}
-  - RMED: {fileID: 1412911217987195021, guid: 2dbdd6a25fa75384596993c6c6bc3c10, type: 3}
+  - RMED: {fileID: 1412911217987195021, guid: 8dfcc398ea28fd946b6ae68b97350cf3, type: 3}
   - RLRG: {fileID: 1412911217987195021, guid: fdc979a18dcf9bc43bf18fd018ce215e, type: 3}
   - GSML: {instanceID: 0}
   - GMED: {instanceID: 0}
-  - GLRG: {instanceID: 0}
+  - GLRG: {fileID: 1412911217987195021, guid: 57ae49444bc2ee84ab8d398914263164, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

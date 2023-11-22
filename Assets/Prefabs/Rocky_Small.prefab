@@ -168,3 +168,5 @@ MonoBehaviour:
   apply_initial_velocity: 0
   debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
   destroyed: 0
+  size: 0
+  health: 10
