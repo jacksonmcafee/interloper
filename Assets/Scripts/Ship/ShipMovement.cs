@@ -8,7 +8,7 @@ public class ShipMovement : MonoBehaviour
 
     [Header("Movement Settings")]
     public float maxSpeed = 5f;
-    public float accelerationForce = 10f;
+    public float accelerationForce = .1f;
     public float boostMultiplier = 2.5f; // Multiplier for boosted speed
     public float decelerationRate = 0.975f; // Adjusted for longer drift
     public float brakingRate = 0.9f; // Rate of deceleration when braking

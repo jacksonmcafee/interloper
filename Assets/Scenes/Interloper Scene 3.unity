@@ -5148,7 +5148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: maxSpeed
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: boostMultiplier
@@ -5156,7 +5156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: accelerationForce
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2764547046843630567, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5208,6 +5208,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ddda81466db1dbb48b042a1f748a6541, type: 3}
     - target: {fileID: 4746097967140687824, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817939765704300928, guid: bddefdf286144754781510c725aae526, type: 3}
+      propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6685902863984564158, guid: bddefdf286144754781510c725aae526, type: 3}
