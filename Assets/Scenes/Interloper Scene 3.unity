@@ -5025,6 +5025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GravPoint: {fileID: 1959560581}
+  rb: {fileID: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  GravRadius: 15
+  particalEffects: {fileID: 0}
 --- !u!1 &1959560580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5141,6 +5145,18 @@ PrefabInstance:
     - target: {fileID: 1100961401203607748, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_Name
       value: PlayerShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
+      propertyPath: maxSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
+      propertyPath: boostMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566157512522898371, guid: bddefdf286144754781510c725aae526, type: 3}
+      propertyPath: accelerationForce
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2764547046843630567, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_LocalPosition.x

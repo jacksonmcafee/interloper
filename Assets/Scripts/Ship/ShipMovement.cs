@@ -4,51 +4,84 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
-    // rigidbody component
     private Rigidbody2D rb;
 
-    // movement velocity cap
-    public float velocityCap = 2f;
+    [Header("Movement Settings")]
+    public float maxSpeed = 5f;
+    public float accelerationForce = 10f;
+    public float boostMultiplier = 2.5f; // Multiplier for boosted speed
+    public float decelerationRate = 0.975f; // Adjusted for longer drift
+    public float brakingRate = 0.9f; // Rate of deceleration when braking
+    public float maxRotationSpeed = 200f;
 
-    // rotation speed (might need to add a cap)
-    public float rotationSpeed = 0.5f;
+    private float accelerationMultiplier = 1f;
+    private float accelerationIncreaseRate = 0.1f;
+    private float maxAccelerationMultiplier = 3f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-     private void ClampVelocity()
-    {
-        float x = Mathf.Clamp(rb.velocity.x, -velocityCap, velocityCap);
-        float y = Mathf.Clamp(rb.velocity.y, -velocityCap, velocityCap);
-
-        rb.velocity = new Vector2(x, y);
-    }
 
     private void Update()
     {
-        // get movement input
         float yAxis = Input.GetAxis("Vertical");
         float xAxis = Input.GetAxis("Horizontal");
+        bool isBoosting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
 
-        // transform the ship
-        Accelerate(yAxis);
-        Rotate(-xAxis * rotationSpeed);
+        // Check for manual braking
+        if (Input.GetKey(KeyCode.S))
+        {
+            ApplyManualBraking();
+        }
+        else
+        {
+            Accelerate(yAxis, isBoosting);
+        }
 
-        // clamp the ship's position within the camera's frame
+        SmoothRotate(-xAxis);
         ClampVelocity();
     }
 
-    private void Accelerate(float accel)
+    private void Accelerate(float accel, bool isBoosting)
     {
-        // add force to the ship
-        Vector2 force = transform.up * accel * 10;  // Multiplied by 10 for stronger force
-        rb.AddForce(force);  // Removed ForceMode2D.Impulse for default ForceMode2D.Force
+        float currentAccelerationForce = accelerationForce;
+        if (isBoosting)
+        {
+            currentAccelerationForce *= boostMultiplier;
+        }
+
+        if (accel != 0)
+        {
+            accelerationMultiplier = Mathf.Min(accelerationMultiplier + accelerationIncreaseRate * Time.deltaTime, maxAccelerationMultiplier);
+        }
+        else
+        {
+            accelerationMultiplier = 1f;
+        }
+
+        Vector2 force = transform.up * accel * currentAccelerationForce * accelerationMultiplier;
+        rb.AddForce(force);
     }
 
-    private void Rotate(float rotation)
+    private void SmoothRotate(float rotationInput)
     {
-        // rotate the ship
-        transform.Rotate(0, 0, rotation);
+        rb.angularVelocity = rotationInput * maxRotationSpeed;
+    }
+
+   private void ClampVelocity()
+{
+    if (rb.velocity.sqrMagnitude > maxSpeed * maxSpeed)
+    {
+        // Interpolating towards the clamped velocity
+        Vector2 clampedVelocity = rb.velocity.normalized * maxSpeed;
+        rb.velocity = Vector2.Lerp(rb.velocity, clampedVelocity, Time.deltaTime * 5f); // Adjust the factor 5f as needed
+    }
+}
+
+    // Manual Braking Function
+    private void ApplyManualBraking()
+    {
+        rb.velocity *= brakingRate;
     }
 }
