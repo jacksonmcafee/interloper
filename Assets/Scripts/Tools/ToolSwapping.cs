@@ -17,14 +17,14 @@ public class ToolSwapping : MonoBehaviour
 
         //swap tools based on key press (hard coded to J and K)
         //based on the order of the tools in the hierarchy
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             if (currentTool >= transform.childCount - 1)
                 currentTool = 0;
             else
             currentTool++;
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             if (currentTool <= 0)
                 currentTool = transform.childCount - 1;
