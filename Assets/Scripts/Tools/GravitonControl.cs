@@ -4,68 +4,73 @@ using UnityEngine;
 
 public class GravitonControl : MonoBehaviour
 {
-    //spot where the planets will be attracted to
+    // spot where the planets will be attracted to
     public Transform GravPoint; 
-    //create state if being active
+    
+    // create state if being active
     private bool GravitonOn = false;
-    //talk to the different components
+    
+    // talk to the different components
     public float GravForce = 10;
     public float radius = 3.18f;
 
+    // talk to the particle system for VFX
+    public ParticleSystem particleEffects;
 
-    //talk to the particle system for VFX
-    public ParticleSystem particalEffects;
-
-    //list for keeping track of bodies in the graviton field
+    // list for keeping track of bodies in the graviton field
     private List<CelestialBody> affectedBodies = new List<CelestialBody>();
 
     // Update is called once per frame
     void Update()
-    {
-        if(!GravitonOn)
-            particalEffects.Stop();
-        //space bar to activate
+    { 
+        // toggle graviton when space is pressed
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            // toggle graviton status
             GravitonOn = !GravitonOn;
             if(GravitonOn)
             {
                 Debug.Log("Graviton Turned ON");
-                particalEffects.Play();
+                particleEffects.Play();
             }
             else
             {
                 Debug.Log("Graviton Turned OFF");
-                particalEffects.Stop();
-                ReactivateGravity();
+                particleEffects.Stop();
+                ReactivateAllGravity();
             }
-                
         }
         
-        //what happens when the Graviton is turned on
+        // get colliders in radius
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+        
+        // behavior when Graviton is enabled
         if(GravitonOn)
         {
-            //for spinning VFX
+            // for spinning VFX
             transform.Rotate(new Vector3(0, 0, 45 * Time.deltaTime));
 
-            //attraction logic
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+            // attraction logic
             foreach (Collider2D col in colliders)
             {
                 if (col.CompareTag("Planet") || col.CompareTag("Debris"))
                 {
                     CelestialBody celestialBody = col.GetComponent<CelestialBody>();
+                    // if collider has Celestial Body component
                     if (celestialBody != null)
                     {
+                        // if the body is not already within the affectedBodies list 
                         if(!affectedBodies.Contains(celestialBody))
                         {
                             affectedBodies.Add(celestialBody);
                             celestialBody.is_gravity_affected = false;
                         }
 
+                        // try to get the body's rb
                         Rigidbody2D body = celestialBody.rigbod;
                         if(body != null)
                         {
+                            // attract towards the GravPoint 
                             Vector2 direction = GravPoint.position - col.transform.position;
                             body.AddForce(direction.normalized * GravForce);
                         }
@@ -73,17 +78,56 @@ public class GravitonControl : MonoBehaviour
                 }
             }
         }
-        
+
+        // bad practice but I do not want to make this better
+        List<CelestialBody> aBCopy = new List<CelestialBody>(affectedBodies);
+
+        // check if any bodies have exited radius
+        foreach (CelestialBody cb in aBCopy)
+        {
+          bool isMatch = false;
+
+          // verify if that celestial body is still within colliders
+          foreach (Collider2D col in colliders)
+          {
+            // get Celestial Body component to verify if cb is contained or not
+            CelestialBody colBody = col.GetComponent<CelestialBody>();
+
+            if (cb == colBody)
+            {
+              isMatch = true;
+              break;
+            }
+          }
+
+          if (!isMatch)
+          {
+            Debug.Log("Body has exited radius, reactivating gravity for that object.");
+            // reactivate gravity for this body because it is no longer in range
+            ReactivateGravity(cb);
+          }
+        }
     }
 
-    //method for reactivating gravity upon exit or graviton field
-    void ReactivateGravity()
+    // method for reactivating gravity when graviton is toggled off
+    void ReactivateAllGravity()
     {
+        // iterate through affectBodies 
         foreach (CelestialBody body in affectedBodies)
         {
-            body.is_gravity_affected = true;
+            ReactivateGravity(body);
         }
         affectedBodies.Clear();
+    }
+
+    // method for reactivating gravity for a single body
+    void ReactivateGravity(CelestialBody cb)
+    {
+      // reset gravity control
+      cb.is_gravity_affected = true;
+      
+      // remove that body from the affectedBodies
+      affectedBodies.Remove(cb);
     }
 
     void OnDrawGizmosSelected()
