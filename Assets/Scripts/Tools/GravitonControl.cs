@@ -20,6 +20,11 @@ public class GravitonControl : MonoBehaviour
     // list for keeping track of bodies in the graviton field
     private List<CelestialBody> affectedBodies = new List<CelestialBody>();
 
+    void Start()
+    {
+      particleEffects.Stop();
+    }
+
     // Update is called once per frame
     void Update()
     { 
