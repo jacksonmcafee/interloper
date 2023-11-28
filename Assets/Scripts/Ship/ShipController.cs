@@ -27,6 +27,7 @@ public class ShipController : MonoBehaviour
     rb = GetComponent<Rigidbody2D>();
     tr = GetComponent<Transform>();
 
+    // set initial values
     this.health = 100;
     this.shields = 50;
   }
@@ -37,21 +38,13 @@ public class ShipController : MonoBehaviour
     if (health < 0) {
       // destroy this object, change scene
     }
-    // control Ship
-    if (Input.GetKeyDown(KeyCode.T))
-    {
-      FireRocket();
-    }
-    if (Input.GetKeyDown(KeyCode.G))
-    {
-      FireLaser();
-    }
   }
 
-  // handle projectile firing
+  // TODO: Remove this function if needed.
+  // handle rocket firing
   public void FireRocket()
   {
-    // intantiate object rocket
+    // intantiate rocket object
     GameObject newRocket = Instantiate(rocketPrefab, transform.position, transform.rotation);
     Rocket rocket = newRocket.GetComponent<Rocket>();
     Rigidbody2D rocketRB = newRocket.GetComponent<Rigidbody2D>();
@@ -62,18 +55,20 @@ public class ShipController : MonoBehaviour
     rocketRB.velocity = transform.up * rocket.speed;
   }
 
-public void FireLaser()
-{
-    GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);
-    Laser laser = newLaser.GetComponent<Laser>();
-    Rigidbody2D laserRB = newLaser.GetComponent<Rigidbody2D>();
+  // TODO: Remove this function if needed.
+  // handle laser firing
+  public void FireLaser()
+  {
+      // intantiate laser object
+      GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);
+      Laser laser = newLaser.GetComponent<Laser>();
+      Rigidbody2D laserRB = newLaser.GetComponent<Rigidbody2D>();
 
-    laser.speed = 15;
-    laser.damage = 10;
+      laser.speed = 15;
+      laser.damage = 10;
 
-    laserRB.velocity = transform.up * laser.speed;
-}
-
+      laserRB.velocity = transform.up * laser.speed;
+  }
 
   // handle different collisions
   private void OnCollisionEnter2D(Collision2D collision)
@@ -104,6 +99,7 @@ public void FireLaser()
     }
   }
 
+  // handle damage taken to shields + health
   private void takeDamage(float damage)
   {
     // track how much damage to deal after shields pop

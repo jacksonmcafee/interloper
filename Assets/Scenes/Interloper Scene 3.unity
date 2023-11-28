@@ -5025,9 +5025,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GravPoint: {fileID: 1959560581}
-  rb: {fileID: 0}
-  velocity: {x: 0, y: 0, z: 0}
-  GravRadius: 15
+  GravForce: 10
+  radius: 3.18
   particalEffects: {fileID: 0}
 --- !u!1 &1959560580
 GameObject:
