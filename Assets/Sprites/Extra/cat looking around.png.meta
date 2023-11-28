@@ -1,0 +1,2988 @@
+fileFormatVersion: 2
+guid: fcaa3cdcbf5e81e44a1fe2749e015126
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cat looking around_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 5565
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03747127ab9f1994889098d11be1fc5d
+      internalID: 1671457779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 5565
+        width: 158
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98000a7d2805de94c8bd5336fd1a8b8d
+      internalID: -1430636412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 5565
+        width: 157
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6951a90bb75ac4c84d4c26afdef5a2
+      internalID: -467661610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 5565
+        width: 158
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cdf3952183b43408601233903ee589
+      internalID: 623389300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_4
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 5565
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b9cc5217566864d95a741565f12c7d
+      internalID: 1128127143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_5
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 5565
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acafc8f4180fee84f88d71153badd40b
+      internalID: -1002151301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_6
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 5565
+        width: 157
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480784c24bebb164e879c8718154a0a2
+      internalID: -1170800594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 5273
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee84678e4324c8a4da6fad9afa027eb2
+      internalID: 2047943684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 5273
+        width: 158
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ee4c330b2f11a41be6487a506a26a0
+      internalID: 1345211766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 5273
+        width: 157
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15355a9491087634b9789f09e07335b7
+      internalID: -1430854419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_10
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 5273
+        width: 158
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6989ded364ffb440a82833548f93314
+      internalID: -392570652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_11
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 5273
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c273cdce32800b4999b11b9db64a3f9
+      internalID: 1447132067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_12
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 5273
+        width: 160
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db9d975f9a875b4da0e5a0c455a234c
+      internalID: -1222785753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_13
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 5273
+        width: 157
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055d28cb0b347b941a061c5c76d14d52
+      internalID: 77505386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_14
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4979
+        width: 160
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c069974550be2704b9297a3632ae1184
+      internalID: 762688613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4979
+        width: 158
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c1d1ca476aff94491653cd1375542f
+      internalID: -47974551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4979
+        width: 157
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48ffec0377047d47ba47079c4f1b4e1
+      internalID: -345960269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_17
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4979
+        width: 158
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9964e49573a74745ba4305d35d6509c
+      internalID: 2080684684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_18
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 4979
+        width: 160
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9af8c6c2a82dd34aacc9eb869ae9152
+      internalID: -17527939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_19
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 4979
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0a4a20704a1f949a722cee1ed706a0
+      internalID: 1251018926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_20
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 4979
+        width: 157
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdc87367649a6747a542440874d494b
+      internalID: 1424497794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4687
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b984c4ad62aa74992f2144c739e767
+      internalID: 192037073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4687
+        width: 158
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f6b87c2172c0742bc85db772b40a79
+      internalID: 683809896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4687
+        width: 157
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4ee725b8fd6254fbad55c3517bf4b5
+      internalID: -79343816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_24
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4687
+        width: 158
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e732a06561a26e44abe4f4eed34623fa
+      internalID: -394997057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_25
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 4687
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f7eed5a99a4664682ae2cb96496826
+      internalID: 1505102649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_26
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 4687
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f1ba939f08faf48b28e4bd937dd6c0
+      internalID: -556329574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_27
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 4687
+        width: 157
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9221a69a4f57374ca3e38a5549cc748
+      internalID: 162232641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_28
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4392
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20f32a543581e0479f643873d9164b4
+      internalID: -1056690010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4392
+        width: 158
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c0998ccf2d027469591d0c6d1b31d2
+      internalID: -390375282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4392
+        width: 157
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63230eaae3da03f48b7abe8c9b9217b0
+      internalID: -254715295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_31
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4392
+        width: 158
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8676ab21c5c1bb94c964051c56dd3cde
+      internalID: 116157917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_32
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 4392
+        width: 160
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d9a7cbb1fb96644a1acacb845b602f
+      internalID: -803040559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_33
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 4392
+        width: 160
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa79faa86f647243895986fc4461fad
+      internalID: -124052079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_34
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 4392
+        width: 157
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8082d09974fb00440a306e9f09ffeb6a
+      internalID: -1278167945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_35
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4100
+        width: 160
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380f9357ec070a040953f5d7a8775908
+      internalID: 476867851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_36
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4100
+        width: 158
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251bcca7d2a2e1e44b884212fd434928
+      internalID: -1896040196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 4100
+        width: 157
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cedb461037fb5546a2120bb07f96313
+      internalID: 1034411851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_38
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 4100
+        width: 161
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d10a12f5ffab204c913e7d525f03a33
+      internalID: 336425436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_39
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 4100
+        width: 160
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f33299a95f9fd4f8df4efa6365cb02
+      internalID: 1611259792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_40
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 4100
+        width: 160
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d09e460efa5f94794878246d485b83
+      internalID: 2099195728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_41
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 4100
+        width: 157
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9433ca043a471014b8b84b6dbbe6277c
+      internalID: -519520982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3808
+        width: 160
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf7a7e44a3b75499f5c59120a002a8
+      internalID: -1177469672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3808
+        width: 158
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4afda440537a0e429e26ec60dcc6f5a
+      internalID: -794604728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 3808
+        width: 157
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5875455a293137499c6d40b3fbffbba
+      internalID: -746207464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_45
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3808
+        width: 158
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215b60ff53501724c99d3028689d7788
+      internalID: -1325450235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_46
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 3808
+        width: 160
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6701f644077e1914298f3e0af9da7db9
+      internalID: 292411083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_47
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 3808
+        width: 166
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0714e1043ec92c4ca093e0075398ba4
+      internalID: 654895933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_48
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 3808
+        width: 166
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c80bc952716faf408a2f176922e0b3d
+      internalID: 1846623683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_49
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3514
+        width: 169
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e258427f3bc294d8b821397e79cfd1
+      internalID: 914684815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3514
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ba5c7e1d9fa744a8460e4b21f4b754
+      internalID: 1203539757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_51
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3514
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d88ffc3f9f91ce44a2b44905f0069d1
+      internalID: -40632523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_52
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 3514
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf910e415b966c47a1a07121ccff6df
+      internalID: 1333732225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_53
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 3514
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d4bb95543f6a745820aef09aea265d
+      internalID: 1568107223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_54
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 3514
+        width: 168
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a458fa9fcf38e4ba559c4ed6b6a49e
+      internalID: -184675509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_55
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 3514
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd3f9b8ee39ae3469715278935b1f2b
+      internalID: -1971092690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_56
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3222
+        width: 172
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc6c173098665545a610aacb121f1ea
+      internalID: 1114375376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3222
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc517aaf64e8014bb8dc952a379438f
+      internalID: 943541795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_58
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3222
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385f50759b652514fab82500d01092f4
+      internalID: 1418900248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_59
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 3222
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05e9b2425d188145b5346632778f443
+      internalID: -1039834640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_60
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 3222
+        width: 172
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba117513768db0749a28ecc35bc1950b
+      internalID: -2052509640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_61
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 3222
+        width: 171
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b70bf057e6bf449b60906990dde006
+      internalID: 1390217012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_62
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 3222
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21470391715ec41409860737c536ba9b
+      internalID: -376823063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_63
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866e9a9b13ecfac49bd663a574330385
+      internalID: 517160747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc610ae230077a4c80154222be254a5
+      internalID: 912635434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_65
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67e643093d45384f82ab7ac57b453f9
+      internalID: -1397697076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_66
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a10ced5a35d1044b71085d49bbd4bb
+      internalID: -327118836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_67
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed82851d2937e34fadb54402f4b2479
+      internalID: 207220272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_68
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2930
+        width: 168
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec80a74509c6f3f45915e22ea843d3bb
+      internalID: 381641205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_69
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2930
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3dacbb7fbc4c14a8423486eb2f0151
+      internalID: 515667855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_70
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2635
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96a0275c497c9e41a77718e3f60d669
+      internalID: -1789378909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_71
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2635
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e23825ddac8e084eb9ae77f1c0223dc
+      internalID: 43066663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_72
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2635
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3d0030b115b604e8381b195ea2a008
+      internalID: -679001220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_73
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2635
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5e2b782d58efa4fbaabd3a78f753e0
+      internalID: -1114107730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_74
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2635
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175455469c497534ea3788f90969fcd8
+      internalID: -2018491182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_75
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2635
+        width: 168
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eb8ac705352b047925c5da7ba0de42
+      internalID: 924295098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_76
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2635
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65fa8abbeeb861478206e830b978308
+      internalID: 1545403898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_77
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2343
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bdf0ae680285b48968b4cdcb1d24f4
+      internalID: -570047109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2343
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7893a66efde19b41a252fce4108a071
+      internalID: -800122372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_79
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2343
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b6a3e16bdfcb045ab91ed99bb1ac8a
+      internalID: -1854799320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_80
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2343
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0f74d264b369b42825f5ab766ce5e4
+      internalID: 1010849622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_81
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2343
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba22e820678b20429ec8db6086d3a34
+      internalID: 1579410145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_82
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2343
+        width: 168
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c99d23f47ed1a4185d850fc6059b2f
+      internalID: -1229531536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_83
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2343
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fa19bd0ed21f64495f42c79e32a9e9
+      internalID: 1632258410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_84
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2049
+        width: 166
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10e370dc36ca4040bc2dac5f2cc3be9
+      internalID: 1802849944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2049
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35790e85d70e3d64289a0bcaefb357b9
+      internalID: -708612802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_86
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2049
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09996d07722d1548a08677e36b7f227
+      internalID: -433383688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_87
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2049
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61463c3c862945747a829b3e830505d8
+      internalID: 748229693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_88
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2049
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501839ccba56b3643903ea84a9a56797
+      internalID: -1890007001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_89
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2052
+        width: 168
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83abcfbb564966c4381a47a554b6d1d9
+      internalID: 550696343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_90
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2049
+        width: 166
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df072c989b052024f91af6456587a015
+      internalID: 1556143397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_91
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1757
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5779f859790049aba22bab5b3958c
+      internalID: -495989856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1757
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296cc13d6b0361c4ebd8a8f489e4791d
+      internalID: -1667640078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_93
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1757
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633b01b03843915438eb99835ba17bcd
+      internalID: -420060953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_94
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1757
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f508984a829904cb1214db4411b7a2
+      internalID: 2349608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_95
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1757
+        width: 169
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7b14db175c47e4893155ee513867bb
+      internalID: -1739988334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_96
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1757
+        width: 168
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e9619ed6ecde844a9961a03a4b4788
+      internalID: 400861171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_97
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1757
+        width: 166
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3ef10d3652d594ebaa474e61a10743
+      internalID: 1370612468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_98
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1465
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6367ce1fc602a47bca0246d3396078
+      internalID: 1543069539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_99
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1465
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c3cea14f05d804fa98ab9346733dad
+      internalID: -2043460947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_100
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1465
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103aaeaccd1ee8041b6b958217502f52
+      internalID: -234775219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_101
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1465
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18dbdd6b333ade4e9605dd9c95cb56d
+      internalID: 1669350099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_102
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1465
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626ed26b0b8da4e4fa4eed76f8d89534
+      internalID: -83734950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_103
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1465
+        width: 168
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bd1e5c824473d46857eb164d188bcc
+      internalID: 1837713973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_104
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1465
+        width: 166
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f8d185e8f6e824aa961f39aeef90c0
+      internalID: -1139828734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_105
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1170
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5a4b2fb9cac804babfd623a48761e5
+      internalID: 370110194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_106
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1170
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686db821bcbc50342b4061d201d7511d
+      internalID: -830221753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_107
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1170
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ec49b4509fcd940b5c559b54db863f
+      internalID: -1610556768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_108
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1170
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6dff98fb9c36440a606fc955d45b0c
+      internalID: -1208306165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_109
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1170
+        width: 166
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae2aa3fc2004714fb3322fe58df1639
+      internalID: 1537620801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_110
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1170
+        width: 166
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e956977567d6441b7a411513db36d6
+      internalID: 921750772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_111
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1170
+        width: 163
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bd4438903b0d4429699da9fcf013a0
+      internalID: -2086765201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_112
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 878
+        width: 163
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb7eee665f689e43a8793c0f970a810
+      internalID: -912825085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_113
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 878
+        width: 163
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada61ff1bce9ea943a110a43a762d1dc
+      internalID: 1168304020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_114
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 878
+        width: 163
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedc63167a80db7429b0b0abfb5244a2
+      internalID: -530474980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_115
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 878
+        width: 164
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981877e3c40e6de4eae2d2f2b9555827
+      internalID: 333077588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_116
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 878
+        width: 163
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92aea65f5f072543a9576481ddab8ef
+      internalID: -2031260232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_117
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 878
+        width: 160
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f9e73a72449584e845dde2bc99d4a3
+      internalID: 1787656479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_118
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 878
+        width: 157
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a398d0fc52d4c94ca3e1c73d19b8b27
+      internalID: 952595581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_119
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 584
+        width: 160
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e7888530128bd40834a26860570351
+      internalID: -1246241637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_120
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 584
+        width: 161
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7204a80eb3560a840a32bd3c13eb9b99
+      internalID: 1875956817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_121
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 584
+        width: 160
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0999c29f3614e543a02dbd76d0d3831
+      internalID: -1849711708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_122
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 584
+        width: 161
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8534d653e65e424f91f33a0d4be3e8c
+      internalID: 1712966004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_123
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 584
+        width: 160
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1179d4bcd40132143a21329e7138f062
+      internalID: -1923452352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_124
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 584
+        width: 160
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb46cfc4b88d9446aab9c175070581d
+      internalID: 1878397415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_125
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 584
+        width: 157
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce4169658b4cc747ba8f43fb6e8197c
+      internalID: -1865357916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_126
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 292
+        width: 160
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd13dab79270d8418f9c40f88705ec9
+      internalID: 1857875399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_127
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 292
+        width: 161
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a60ce71759e994ca3e7d3a792be639
+      internalID: 758028939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_129
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 160
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7e73a417f1c004ba69dbdd6f9e5cd5
+      internalID: -849356126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat looking around_130
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 161
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13e69ffe1d8b0542a2a88d06c7d0520
+      internalID: 1474871956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cat looking around_0: 1671457779
+      cat looking around_1: -1430636412
+      cat looking around_10: -392570652
+      cat looking around_100: -234775219
+      cat looking around_101: 1669350099
+      cat looking around_102: -83734950
+      cat looking around_103: 1837713973
+      cat looking around_104: -1139828734
+      cat looking around_105: 370110194
+      cat looking around_106: -830221753
+      cat looking around_107: -1610556768
+      cat looking around_108: -1208306165
+      cat looking around_109: 1537620801
+      cat looking around_11: 1447132067
+      cat looking around_110: 921750772
+      cat looking around_111: -2086765201
+      cat looking around_112: -912825085
+      cat looking around_113: 1168304020
+      cat looking around_114: -530474980
+      cat looking around_115: 333077588
+      cat looking around_116: -2031260232
+      cat looking around_117: 1787656479
+      cat looking around_118: 952595581
+      cat looking around_119: -1246241637
+      cat looking around_12: -1222785753
+      cat looking around_120: 1875956817
+      cat looking around_121: -1849711708
+      cat looking around_122: 1712966004
+      cat looking around_123: -1923452352
+      cat looking around_124: 1878397415
+      cat looking around_125: -1865357916
+      cat looking around_126: 1857875399
+      cat looking around_127: 758028939
+      cat looking around_128: -1609567841
+      cat looking around_129: -849356126
+      cat looking around_13: 77505386
+      cat looking around_130: 1474871956
+      cat looking around_14: 762688613
+      cat looking around_15: -47974551
+      cat looking around_16: -345960269
+      cat looking around_17: 2080684684
+      cat looking around_18: -17527939
+      cat looking around_19: 1251018926
+      cat looking around_2: -467661610
+      cat looking around_20: 1424497794
+      cat looking around_21: 192037073
+      cat looking around_22: 683809896
+      cat looking around_23: -79343816
+      cat looking around_24: -394997057
+      cat looking around_25: 1505102649
+      cat looking around_26: -556329574
+      cat looking around_27: 162232641
+      cat looking around_28: -1056690010
+      cat looking around_29: -390375282
+      cat looking around_3: 623389300
+      cat looking around_30: -254715295
+      cat looking around_31: 116157917
+      cat looking around_32: -803040559
+      cat looking around_33: -124052079
+      cat looking around_34: -1278167945
+      cat looking around_35: 476867851
+      cat looking around_36: -1896040196
+      cat looking around_37: 1034411851
+      cat looking around_38: 336425436
+      cat looking around_39: 1611259792
+      cat looking around_4: 1128127143
+      cat looking around_40: 2099195728
+      cat looking around_41: -519520982
+      cat looking around_42: -1177469672
+      cat looking around_43: -794604728
+      cat looking around_44: -746207464
+      cat looking around_45: -1325450235
+      cat looking around_46: 292411083
+      cat looking around_47: 654895933
+      cat looking around_48: 1846623683
+      cat looking around_49: 914684815
+      cat looking around_5: -1002151301
+      cat looking around_50: 1203539757
+      cat looking around_51: -40632523
+      cat looking around_52: 1333732225
+      cat looking around_53: 1568107223
+      cat looking around_54: -184675509
+      cat looking around_55: -1971092690
+      cat looking around_56: 1114375376
+      cat looking around_57: 943541795
+      cat looking around_58: 1418900248
+      cat looking around_59: -1039834640
+      cat looking around_6: -1170800594
+      cat looking around_60: -2052509640
+      cat looking around_61: 1390217012
+      cat looking around_62: -376823063
+      cat looking around_63: 517160747
+      cat looking around_64: 912635434
+      cat looking around_65: -1397697076
+      cat looking around_66: -327118836
+      cat looking around_67: 207220272
+      cat looking around_68: 381641205
+      cat looking around_69: 515667855
+      cat looking around_7: 2047943684
+      cat looking around_70: -1789378909
+      cat looking around_71: 43066663
+      cat looking around_72: -679001220
+      cat looking around_73: -1114107730
+      cat looking around_74: -2018491182
+      cat looking around_75: 924295098
+      cat looking around_76: 1545403898
+      cat looking around_77: -570047109
+      cat looking around_78: -800122372
+      cat looking around_79: -1854799320
+      cat looking around_8: 1345211766
+      cat looking around_80: 1010849622
+      cat looking around_81: 1579410145
+      cat looking around_82: -1229531536
+      cat looking around_83: 1632258410
+      cat looking around_84: 1802849944
+      cat looking around_85: -708612802
+      cat looking around_86: -433383688
+      cat looking around_87: 748229693
+      cat looking around_88: -1890007001
+      cat looking around_89: 550696343
+      cat looking around_9: -1430854419
+      cat looking around_90: 1556143397
+      cat looking around_91: -495989856
+      cat looking around_92: -1667640078
+      cat looking around_93: -420060953
+      cat looking around_94: 2349608
+      cat looking around_95: -1739988334
+      cat looking around_96: 400861171
+      cat looking around_97: 1370612468
+      cat looking around_98: 1543069539
+      cat looking around_99: -2043460947
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
