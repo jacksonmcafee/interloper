@@ -11,11 +11,17 @@ public class GravitonControl : MonoBehaviour
     //talk to the different components
     public Rigidbody2D rb;
     public Vector3 velocity;
-    public float GravRadius = 15;
+    public float GravForce = 10;
+    public float radius = 5f;
 
 
     //talk to the particle system for VFX
     public ParticleSystem particalEffects;
+
+    void Start()
+    {
+        particalEffects.
+    }
 
     // Update is called once per frame
     void Update()
@@ -38,19 +44,20 @@ public class GravitonControl : MonoBehaviour
         }
         
     }
-    
-    void FixedUpdate()
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if(GravitonOn)
+        if (other.CompareTag("Planet || Debris"))
         {
-            rb.AddForce(velocity, ForceMode2D.Impulse);
+            Vector2 direction = GravPoint.position - other.transform.position;
+            other.attachedRigidbody.AddForce(direction.normalized * attractionForce);
         }
     }
 
-    //drawing the gravity circle in debug
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, GravRadius);
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
+    
 }
