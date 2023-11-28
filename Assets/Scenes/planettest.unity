@@ -332,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764547046843630567, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 2764547046843630567, guid: bddefdf286144754781510c725aae526, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5662,8 +5662,8 @@ MonoBehaviour:
   initial_velocity: {x: 0, y: 0, z: 0}
   apply_initial_velocity: 0
   debrisPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 0}
   destroyed: 0
-  size: 0
   health: 0
 --- !u!50 &1591532369
 Rigidbody2D:
