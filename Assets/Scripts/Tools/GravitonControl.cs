@@ -22,6 +22,7 @@ public class GravitonControl : MonoBehaviour
 
     void Start()
     {
+      // disable particles on start
       particleEffects.Stop();
     }
 
@@ -46,12 +47,13 @@ public class GravitonControl : MonoBehaviour
             }
         }
         
-        // get colliders in radius
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
         
         // behavior when Graviton is enabled
         if(GravitonOn)
         {
+            // get colliders in radius
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+        
             // for spinning VFX
             transform.Rotate(new Vector3(0, 0, 45 * Time.deltaTime));
 
@@ -81,47 +83,50 @@ public class GravitonControl : MonoBehaviour
                         }
                     }
                 }
-            }
-        }
+            } 
 
-        // bad practice but I do not want to make this better
-        List<CelestialBody> aBCopy = new List<CelestialBody>(affectedBodies);
+            // TODO: Integrate this tightly with attraction logic?
+            // make a copy so that we can remove bodies as needed
+            List<CelestialBody> aBCopy = new List<CelestialBody>(affectedBodies);
 
-        // check if any bodies have exited radius
-        foreach (CelestialBody cb in aBCopy)
-        {
-          bool isMatch = false;
-
-          // verify if that celestial body is still within colliders
-          foreach (Collider2D col in colliders)
-          {
-            // get Celestial Body component to verify if cb is contained or not
-            CelestialBody colBody = col.GetComponent<CelestialBody>();
-
-            if (cb == colBody)
+            // check if any bodies have exited radius
+            foreach (CelestialBody cb in aBCopy)
             {
-              isMatch = true;
-              break;
-            }
-          }
+              bool isMatch = false;
 
-          if (!isMatch)
-          {
-            Debug.Log("Body has exited radius, reactivating gravity for that object.");
-            // reactivate gravity for this body because it is no longer in range
-            ReactivateGravity(cb);
-          }
+              // verify if that celestial body is still within colliders
+              foreach (Collider2D col in colliders)
+              {
+                // get Celestial Body component to verify if cb is contained or not
+                CelestialBody colBody = col.GetComponent<CelestialBody>();
+
+                if (cb == colBody)
+                {
+                  isMatch = true;
+                  break;
+                }
+              }
+
+              if (!isMatch)
+              {
+                Debug.Log("Body has exited radius, reactivating gravity for that object.");
+                // reactivate gravity for this body because it is no longer in range
+                ReactivateGravity(cb);
+              }
+            }
         }
     }
 
     // method for reactivating gravity when graviton is toggled off
     void ReactivateAllGravity()
     {
-        // iterate through affectBodies 
+        // iterate through affectedBodies and reactivate gravity 
         foreach (CelestialBody body in affectedBodies)
         {
             ReactivateGravity(body);
         }
+
+        // clear list as no items should exist
         affectedBodies.Clear();
     }
 
