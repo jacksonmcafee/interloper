@@ -20,12 +20,6 @@ public class GravitonControl : MonoBehaviour
     // list for keeping track of bodies in the graviton field
     private List<CelestialBody> affectedBodies = new List<CelestialBody>();
 
-    void Start()
-    {
-      // disable particles on start
-      particleEffects.Stop();
-    }
-
     // Update is called once per frame
     void Update()
     { 
@@ -120,8 +114,10 @@ public class GravitonControl : MonoBehaviour
     // method for reactivating gravity when graviton is toggled off
     void ReactivateAllGravity()
     {
+        List<CelestialBody> aBCopy = new List<CelestialBody>(affectedBodies);
+     
         // iterate through affectedBodies and reactivate gravity 
-        foreach (CelestialBody body in affectedBodies)
+        foreach (CelestialBody body in aBCopy)
         {
             ReactivateGravity(body);
         }
