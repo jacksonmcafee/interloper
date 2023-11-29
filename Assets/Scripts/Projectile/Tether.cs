@@ -5,14 +5,15 @@ using UnityEngine;
 public class Tether : Projectile
 {
     public float despawnTime = .5f;
-    
+    public float attractionForce = 100f;
+
     public GameObject FlagPrefab;
 
-    //flag if the tether is attached to a single planet
+    // flag if the tether is attached to a single planet
     private bool isTethered = false;
-    //keep track of attached planets
-    private GameObject firstBody;
-    private GameObject secondBody;
+    // keep track of attached planets
+    private static GameObject firstBody;
+    private static GameObject secondBody;
     private GameObject anchorFlag; //the flag that goes on the first tethered planet
 
     //line renderer
@@ -29,9 +30,14 @@ public class Tether : Projectile
     {
         yield return new WaitForSeconds(despawnTime);
 
-        //if the flag exists, destroy it
-        if (anchorFlag != null)
+        Debug.Log("Despawning anchor and tether.");
+
+        // if the flag exists, destroy it
+        if (anchorFlag)
         {
+            // NOTE: (J) THIS WILL NOT DESTROY A FLAG IN PLACE
+            // YOU MUST STORE A REFERENCE TO EXISTING FLAGS FOR THIS
+            // TO FUNCTION PROPERLY
             Destroy(anchorFlag);
         }
 
@@ -45,27 +51,30 @@ public class Tether : Projectile
         {
             if (!isTethered)
             {
-                Debug.Log("Tethered a Planet");
-
                 if (firstBody == null)
                 {
                     firstBody = other.gameObject;
-                    Vector3 bodyPos = other.transform.position;
-                    Instantiate(FlagPrefab, bodyPos, Quaternion.identity, other.transform);
+                    anchorFlag = Instantiate(FlagPrefab, other.transform.position, Quaternion.identity, other.transform);
                 }
-                else if (firstBody != other.gameObject)
+                else if (firstBody != other.gameObject && secondBody == null)
                 {
                     secondBody = other.gameObject;
-                    Vector3 firstPos = firstBody.transform.position;
-                    Vector3 secondPos = secondBody.transform.position;
+                    lr.SetPosition(0, firstBody.transform.position);
+                    lr.SetPosition(1, secondBody.transform.position);
 
-                    //setting the line renderer positions
-                    lr.SetPosition(0, firstPos);
-                    lr.SetPosition(1, secondPos);
+                    firstBody.GetComponent<PlanetController>().tetheredTo = secondBody;
+                    secondBody.GetComponent<PlanetController>().tetheredTo = firstBody;
 
-                    //tether logic goes here
+                    firstBody.GetComponent<PlanetController>().isTethered = true;
+                    secondBody.GetComponent<PlanetController>().isTethered = true;
 
                     isTethered = true;
+                }
+                else
+                {
+                    firstBody = other.gameObject;
+                    anchorFlag = Instantiate(FlagPrefab, other.transform.position, Quaternion.identity);
+                    secondBody = null;
                 }
             }
         }
@@ -75,4 +84,22 @@ public class Tether : Projectile
         }
     }
     
+    private void AttractBodies()
+    {
+        Debug.Log("Attracting bodies...");
+        
+        Vector3 attractionDirection = (secondBody.transform.position - firstBody.transform.position).normalized;
+        float forceMagnitude = attractionForce / Mathf.Pow(Vector3.Distance(secondBody.transform.position, firstBody.transform.position), 2);
+        
+        if(!firstBody.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb1))
+            Debug.LogWarning("First body has no RigidBody2D!", firstBody);
+        else
+            rb1.AddForce(attractionDirection * forceMagnitude);
+            
+        
+        if(!secondBody.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb2))
+            Debug.LogWarning("Second body has no RigidBody2D!", secondBody);
+        else
+            rb2.AddForce(-attractionDirection * forceMagnitude);
+    }
 }
