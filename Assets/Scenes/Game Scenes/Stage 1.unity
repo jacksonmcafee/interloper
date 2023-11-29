@@ -308,6 +308,8 @@ MonoBehaviour:
   targetTransform: {fileID: 8528599019715460262}
   scoringObject: {fileID: 1516898888}
   scoringScript: {fileID: 0}
+  stageText: {fileID: 336727946}
+  fadeDuration: 3
 --- !u!1 &336727944
 GameObject:
   m_ObjectHideFlags: 0

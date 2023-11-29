@@ -16,6 +16,10 @@ public class UIManager : MonoBehaviour
     int x_coordinate; 
     int y_coordinate;
 
+    public TMP_Text stageText;
+    public string stageTextString;
+    public float fadeDuration = 3f;
+
     void Start()
     {
       if (scoringObject != null) {
@@ -29,6 +33,8 @@ public class UIManager : MonoBehaviour
       {
         Debug.Log("Scoring object (singularity) not linked in Inspector.");
       }
+
+      StartCoroutine(ShowStageText(stageTextString, 0.5f));
     }
 
     void Update()
@@ -56,5 +62,24 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    IEnumerator ShowStageText(string text, float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
+        stageText.text = text;
+
+        float currentTime = 0;
+        Color initialColor = stageText.color;
+
+        while (currentTime < fadeDuration)
+        {
+            float alpha = Mathf.Lerp(1f, 0f, currentTime / fadeDuration);
+            stageText.color = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Disable the Text object after fading out
+        stageText.gameObject.SetActive(false);
+    }
 }
