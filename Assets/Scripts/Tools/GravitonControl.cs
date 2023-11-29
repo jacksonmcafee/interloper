@@ -17,6 +17,9 @@ public class GravitonControl : MonoBehaviour
 
     // talk to the particle system for VFX
     public ParticleSystem particleEffects;
+  
+    // talk to audio source for SFX
+    public AudioSource audioSource; 
 
     // list for keeping track of bodies in the graviton field
     private List<CelestialBody> affectedBodies = new List<CelestialBody>();
@@ -32,11 +35,13 @@ public class GravitonControl : MonoBehaviour
             if(GravitonOn)
             {
                 Debug.Log("Graviton Turned ON");
+                audioSource.Play();
                 particleEffects.Play();
             }
             else
             {
                 Debug.Log("Graviton Turned OFF");
+                audioSource.Stop();
                 particleEffects.Stop();
                 ReactivateAllGravity(); 
             }
