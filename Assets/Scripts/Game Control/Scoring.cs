@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Scoring : MonoBehaviour
 {
     public int currentScore = 0;
-    public int targetScore = 5;
+    public int targetScore = 25;
     private int scoreDiff;
 
     private float mass;

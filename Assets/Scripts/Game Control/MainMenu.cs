@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // swaps to Level scene 
     public void OpenGame()
     {
-      SceneManager.LoadSceneAsync("planettest");
+      SceneManager.LoadSceneAsync("Stage 1");
     }
 
     // swaps to Settings scene 
