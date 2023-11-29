@@ -8,33 +8,44 @@ using UnityEngine;
 public class Planetoid : CelestialBody
 {
     public GameObject debrisPrefab;
+    public GameObject explosionPrefab;
 
     public bool destroyed;
-
-    public int size;
 
     public float health;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         ContactPoint2D contact = collision.GetContact(0);
-        // Debug.Log(contact.point);
-        // Debug.DrawLine(contact.point,contact.otherCollider.ClosestPoint(contact.point),Color.red,1f);
-        
-        // add mass to other rigidbody
-        // collision.otherRigidbody.mass += 0.5f;
-        Debug.Log("collision:");
-        Debug.Log(collision.relativeVelocity.magnitude); //same for both sides
-        Debug.Log(collision.transform.position);         //flipped
-        Debug.Log(collision.otherRigidbody.position);    //flipped
-        //if(collision.gameObject.GetComponent<CircleCollider2D>().radius >= gameObject.GetComponent<CircleCollider2D>().radius)
+        //Debug.Log("collision:");
+        //Debug.Log(collision.relativeVelocity.magnitude); //same for both sides
+        //Debug.Log(collision.transform.position);         //flipped
+        //Debug.Log(collision.otherRigidbody.position);    //flipped
         if (!destroyed)
         {
-            Debug.Log("not destroyed, hit check...");
+            //Debug.Log("not destroyed, hit check...");
             if(collision.gameObject.tag == "Planet")
             {
                 Debug.Log("hit other planet...");
                 Planetoid pscript = collision.gameObject.GetComponent<Planetoid>();
+                Rigidbody2D prigbod = collision.gameObject.GetComponent<Rigidbody2D>();
+                if (pscript != null) 
+                {
+                    if((pscript.destroyed == true) && (prigbod.mass < rigbod.mass))
+                    {
+                        Debug.Log("Bigger planet recieving mass, not deleting...");
+                        Debug.Log("Planet is now:");
+                        Debug.Log(prigbod.mass + rigbod.mass);
+                    }
+                    else
+                    {
+                        collision.gameObject.transform.localScale += new Vector3(rigbod.mass/5, rigbod.mass/5, 0);
+                        prigbod.mass += rigbod.mass;
+                        destroyed = true;
+                        Destroy(gameObject);
+                    }
+                }
+                /*Planetoid pscript = collision.gameObject.GetComponent<Planetoid>();
                 if (pscript != null) 
                 {
                     Debug.Log("breaking...");
@@ -42,11 +53,18 @@ public class Planetoid : CelestialBody
                     pscript.destroyed = true;
                     Destroy(gameObject);
                     makeDebris(collision);
-                }
+                }*/
             }
             else if(collision.gameObject.tag == "Singularity")
             {
                 Debug.Log("hit THE SINGULARITY...");
+                Rigidbody2D prigbod = collision.gameObject.GetComponent<Rigidbody2D>();
+                Debug.Log("Singularity hit object of mass:");
+                Debug.Log(rigbod.mass);
+                Debug.Log("Singularity is now:");
+                Debug.Log(prigbod.mass + rigbod.mass);
+                prigbod.mass += rigbod.mass;
+                collision.gameObject.transform.localScale += new Vector3(rigbod.mass/25, rigbod.mass/25, 0);
                 destroyed = true;
                 Destroy(gameObject);
             }
@@ -73,10 +91,13 @@ public class Planetoid : CelestialBody
         }
     }
 
+    // j: upvote on that
     //I KNOW THIS IS DISGUSTING
     //PLEASE FORGIVE ME FOR WHAT I MUST DO
     private void makeDebris(Collision2D collision)
     {
+        GameObject explosion = Instantiate(explosionPrefab, collision.otherRigidbody.position, Quaternion.identity);
+
         //Debug.Log("spawning updebris: ");
         //Debug.Log(collision.otherRigidbody.position + Vector2.up + collision.relativeVelocity);
         //Debug.Log("with velocity: ");
@@ -89,7 +110,7 @@ public class Planetoid : CelestialBody
         updebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.up, ForceMode2D.Impulse);
         downdebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.down, ForceMode2D.Impulse);
 
-        if(size >= 1) //add 2 debris w/ symmetry
+        if(rigbod.mass > 0.5) //add 2 debris w/ symmetry
         {
             Vector3 rightposshift = collision.otherRigidbody.position + Vector2.right;
             Vector3 leftposshift = collision.otherRigidbody.position + Vector2.left;
@@ -99,7 +120,7 @@ public class Planetoid : CelestialBody
             leftdebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.left, ForceMode2D.Impulse);
         }
         
-        if(size >= 2) //add 4 debris w/ symmetry
+        if(rigbod.mass > 1) //add 4 debris w/ symmetry
         {
             Vector3 uprightposshift = collision.otherRigidbody.position + (Vector2.up + Vector2.right).normalized;
             Vector3 downrightposshift = collision.otherRigidbody.position + (Vector2.down + Vector2.right).normalized;

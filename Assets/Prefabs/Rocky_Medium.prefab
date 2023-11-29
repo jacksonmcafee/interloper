@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -167,6 +167,6 @@ MonoBehaviour:
   initial_velocity: {x: 0, y: 0, z: 0}
   apply_initial_velocity: 0
   debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
+  explosionPrefab: {fileID: 1597105032989865925, guid: 2e28485c19c4961469297912cbad0606, type: 3}
   destroyed: 0
-  size: 1
   health: 20

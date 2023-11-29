@@ -2,20 +2,32 @@ using UnityEngine;
 
 public class ParallaxController : MonoBehaviour
 {
-    Transform cam;
+    public Transform cam;  // Make cam public to assign from editor
     Vector3 camStartPos;
     float distance;
-    float yDistance;  // New variable for y-axis distance
+    float yDistance;
     GameObject[] backgrounds;
     Material[] mat;
     float[] backspeed;
     float farthestBack;
     [Range(0.01f, 0.05f)]
     public float parallaxSpeed;
-    
+
     void Start()
     {
-        cam = Camera.main.transform;
+        // Check if the camera is assigned, if not, try to find the main camera
+        if (cam == null)
+        {
+            cam = Camera.main?.transform;
+
+            // If no main camera is found, disable the script
+            if (cam == null)
+            {
+                Debug.LogWarning("ParallaxController: No camera assigned and no main camera found. Disabling script.");
+                this.enabled = false;
+                return;
+            }
+        }
         camStartPos = cam.position;
 
         int backCount = transform.childCount;
