@@ -11,8 +11,9 @@ public class GravitonControl : MonoBehaviour
     private bool GravitonOn = false;
     
     // talk to the different components
-    public float GravForce = 10;
+    public float GravForce = 1f;
     public float radius = 3.18f;
+    public float maxBodySpeed = 5f;
 
     // talk to the particle system for VFX
     public ParticleSystem particleEffects;
@@ -37,7 +38,7 @@ public class GravitonControl : MonoBehaviour
             {
                 Debug.Log("Graviton Turned OFF");
                 particleEffects.Stop();
-                ReactivateAllGravity();
+                ReactivateAllGravity(); 
             }
         }
         
@@ -74,6 +75,7 @@ public class GravitonControl : MonoBehaviour
                             // attract towards the GravPoint 
                             Vector2 direction = GravPoint.position - col.transform.position;
                             body.AddForce(direction.normalized * GravForce);
+                            ClampVelocity(body);
                         }
                     }
                 }
@@ -141,5 +143,17 @@ public class GravitonControl : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, radius);
     }
-    
+   
+    // method for adjusting body velocity (during graviton use)
+    private void ClampVelocity(Rigidbody2D rb)
+    {
+      if (rb.velocity.sqrMagnitude > maxBodySpeed * maxBodySpeed)
+      {
+        // Interpolating towards the clamped velocity
+        Vector2 clampedVelocity = rb.velocity.normalized * maxBodySpeed;
+        
+        // Adjust the factor 5f as needed
+        rb.velocity = Vector2.Lerp(rb.velocity, clampedVelocity, Time.deltaTime * 5f); 
+      }
+    }
 }

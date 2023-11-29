@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Scenes/Settings.unity
     guid: 4832a938466bca3439ddba183f1499d8
   - enabled: 1
-    path: Assets/Scenes/planettest.unity
+    path: Assets/Scenes/Game Scenes/planettest.unity
     guid: 2011d5e2b5de153498566dff192cae7f
   m_configObjects: {}
