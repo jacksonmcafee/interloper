@@ -16,10 +16,4 @@ public class Explosion : MonoBehaviour
     yield return new WaitForSeconds(despawnTime);
     Destroy(gameObject);
   }
-
-  /*public override void HandleCollision(Collider2D other)
-  {
-    // handle Laser collision behavior
-
-  }*/
 }

@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuScenes/Menu.unity
+    path: Assets/Scenes/Menu Scenes/Menu.unity
     guid: cbccf87bf9937944e88952f4c554010a
   - enabled: 1
-    path: Assets/Scenes/MenuScenes/Credits.unity
+    path: Assets/Scenes/Menu Scenes/Credits.unity
     guid: 3d9e975ed7b23d14eb648d8a2e85c590
   - enabled: 1
-    path: Assets/Scenes/MenuScenes/Settings.unity
+    path: Assets/Scenes/Menu Scenes/Settings.unity
     guid: 4832a938466bca3439ddba183f1499d8
   - enabled: 1
     path: Assets/Scenes/planettest.unity
