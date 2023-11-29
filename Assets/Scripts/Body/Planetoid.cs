@@ -91,6 +91,7 @@ public class Planetoid : CelestialBody
         }
     }
 
+    // j: upvote on that
     //I KNOW THIS IS DISGUSTING
     //PLEASE FORGIVE ME FOR WHAT I MUST DO
     private void makeDebris(Collision2D collision)
