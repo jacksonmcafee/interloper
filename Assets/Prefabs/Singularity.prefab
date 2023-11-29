@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d61920fbe11c124fb6814e80746a014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigbod: {fileID: 0}
+  rigbod: {fileID: 575811104711285002}
   is_gravity_affected_f: 1
   is_gravity_biased_f: 1
   initial_velocity: {x: 0, y: 0, z: 0}
