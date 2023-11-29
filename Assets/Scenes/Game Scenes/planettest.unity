@@ -307,6 +307,9 @@ MonoBehaviour:
   targetTransform: {fileID: 8528599019715460262}
   scoringObject: {fileID: 1516898888}
   scoringScript: {fileID: 0}
+  stageText: {fileID: 0}
+  stageTextString: 
+  fadeDuration: 3
 --- !u!1001 &496912840
 PrefabInstance:
   m_ObjectHideFlags: 0
