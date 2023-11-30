@@ -31,7 +31,7 @@ public class BodyPhysics : MonoBehaviour
         {
             for (int j = 0; j < celbodies.Count; j++)
             {
-                if(i != j && !(celbodies[j].is_gravity_biased))
+                if(i != j && !(celbodies[j].is_gravity_biased) && (celbodies[j]))
                 {
                     gravAttract(celbodies[i].rigbod, celbodies[j].rigbod, celbodies[i].is_gravity_biased);
                 }
