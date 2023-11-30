@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7485990825736933183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6ac0cb33ac8eb3b40aa0b9651bfa403b, type: 3}
+  m_Texture: {fileID: 2800000, guid: 23153420318c239418c73dba255e7b27, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -86,5 +86,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetoidTag: Planet
-  rotationSpeed: 3
+  rotationSpeed: 10
   ship: {fileID: 0}
