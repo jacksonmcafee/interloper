@@ -30,5 +30,10 @@ public class Debris : CelestialBody
             Debug.Log("DEBRIS hit THE SINGULARITY...");
             Destroy(gameObject);
         }
+        else if(collision.gameObject.tag == "Star")
+        {
+            Debug.Log("DEBRIS hit A STAR...");
+            Destroy(gameObject);
+        }
     }
 }
