@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // require rigidbody for collisions
 [RequireComponent(typeof(Rigidbody2D))]
@@ -37,6 +38,7 @@ public class ShipController : MonoBehaviour
     // check if health < 0
     if (health < 0) {
       // destroy this object, change scene
+      SceneManager.LoadSceneAsync("Lose");
     }
   }
 
