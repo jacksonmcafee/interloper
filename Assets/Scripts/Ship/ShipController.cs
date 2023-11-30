@@ -81,20 +81,9 @@ public class ShipController : MonoBehaviour
       // DAMAGE NEEDS TO BE TUNED
       takeDamage(10f);
     }
-    else if (collision.gameObject.GetComponent<Enemy>())
-    {
-      // take damage proportional to speed of collision and mass of both objects 
-      // DAMAGE NEEDS TO BE TUNED
-      takeDamage(10f);
-    }
     else if (collision.gameObject.GetComponent<Projectile>())
     {
       // take damage based on type of projectile
-      
-    }
-    else if (collision.gameObject.GetComponent<Pickup>())
-    {
-      // determine what type of pickup  
       
     }
   }
