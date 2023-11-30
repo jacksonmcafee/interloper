@@ -40,36 +40,6 @@ public class ShipController : MonoBehaviour
     }
   }
 
-  // TODO: Remove this function if needed.
-  // handle rocket firing
-  public void FireRocket()
-  {
-    // intantiate rocket object
-    GameObject newRocket = Instantiate(rocketPrefab, transform.position, transform.rotation);
-    Rocket rocket = newRocket.GetComponent<Rocket>();
-    Rigidbody2D rocketRB = newRocket.GetComponent<Rigidbody2D>();
-
-    rocket.speed = 10;
-    rocket.damage = 15;
-  
-    rocketRB.velocity = transform.up * rocket.speed;
-  }
-
-  // TODO: Remove this function if needed.
-  // handle laser firing
-  public void FireLaser()
-  {
-      // intantiate laser object
-      GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);
-      Laser laser = newLaser.GetComponent<Laser>();
-      Rigidbody2D laserRB = newLaser.GetComponent<Rigidbody2D>();
-
-      laser.speed = 15;
-      laser.damage = 10;
-
-      laserRB.velocity = transform.up * laser.speed;
-  }
-
   // handle different collisions
   private void OnCollisionEnter2D(Collision2D collision)
   {
