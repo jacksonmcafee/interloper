@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    // swaps to Info scene
+    public void OpenInfo()
+    {
+      SceneManager.LoadSceneAsync("Info");
+    }
+
     // swaps to Level scene 
     public void OpenGame()
     {
