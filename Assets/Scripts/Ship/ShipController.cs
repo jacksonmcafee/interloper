@@ -36,7 +36,7 @@ public class ShipController : MonoBehaviour
   private void Update()
   {
     // check if health < 0
-    if (health =< 0) {
+    if (health <= 0) {
       // destroy this object, change scene
       SceneManager.LoadSceneAsync("Lose");
     }
