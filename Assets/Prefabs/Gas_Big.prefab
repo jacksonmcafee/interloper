@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigbod: {fileID: 0}
   is_gravity_affected_f: 1
-  is_gravity_biased_f: 1
+  is_gravity_biased_f: 0
   initial_velocity: {x: 0, y: 0, z: 0}
   apply_initial_velocity: 0
   debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}

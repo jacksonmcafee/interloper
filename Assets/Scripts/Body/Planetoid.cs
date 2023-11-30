@@ -39,7 +39,7 @@ public class Planetoid : CelestialBody
                     }
                     else
                     {
-                        collision.gameObject.transform.localScale += new Vector3(rigbod.mass/5, rigbod.mass/5, 0);
+                        collision.gameObject.transform.localScale += new Vector3(rigbod.mass/(5*Mathf.Sqrt(rigbod.mass)), rigbod.mass/(5*Mathf.Sqrt(rigbod.mass)), 0);
                         prigbod.mass += rigbod.mass;
                         destroyed = true;
                         Destroy(gameObject);
@@ -64,7 +64,12 @@ public class Planetoid : CelestialBody
                 Debug.Log("Singularity is now:");
                 Debug.Log(prigbod.mass + rigbod.mass);
                 prigbod.mass += rigbod.mass;
-                collision.gameObject.transform.localScale += new Vector3(rigbod.mass/25, rigbod.mass/25, 0);
+                collision.gameObject.transform.localScale += new Vector3(rigbod.mass/(5*Mathf.Sqrt(rigbod.mass)), rigbod.mass/(5*Mathf.Sqrt(rigbod.mass)), 0);
+                destroyed = true;
+                Destroy(gameObject);
+            }
+            else if(collision.gameObject.tag == "Star")
+            {
                 destroyed = true;
                 Destroy(gameObject);
             }

@@ -9,6 +9,7 @@ TagManager:
   - Debris
   - Projectile
   - GameMusic
+  - Star
   layers:
   - Default
   - TransparentFX

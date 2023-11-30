@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // require rigidbody for collisions
 [RequireComponent(typeof(Rigidbody2D))]
@@ -35,39 +36,10 @@ public class ShipController : MonoBehaviour
   private void Update()
   {
     // check if health < 0
-    if (health < 0) {
+    if (health <= 0) {
       // destroy this object, change scene
+      SceneManager.LoadSceneAsync("Lose");
     }
-  }
-
-  // TODO: Remove this function if needed.
-  // handle rocket firing
-  public void FireRocket()
-  {
-    // intantiate rocket object
-    GameObject newRocket = Instantiate(rocketPrefab, transform.position, transform.rotation);
-    Rocket rocket = newRocket.GetComponent<Rocket>();
-    Rigidbody2D rocketRB = newRocket.GetComponent<Rigidbody2D>();
-
-    rocket.speed = 10;
-    rocket.damage = 15;
-  
-    rocketRB.velocity = transform.up * rocket.speed;
-  }
-
-  // TODO: Remove this function if needed.
-  // handle laser firing
-  public void FireLaser()
-  {
-      // intantiate laser object
-      GameObject newLaser = Instantiate(laserPrefab, transform.position, transform.rotation);
-      Laser laser = newLaser.GetComponent<Laser>();
-      Rigidbody2D laserRB = newLaser.GetComponent<Rigidbody2D>();
-
-      laser.speed = 15;
-      laser.damage = 10;
-
-      laserRB.velocity = transform.up * laser.speed;
   }
 
   // handle different collisions
@@ -81,20 +53,9 @@ public class ShipController : MonoBehaviour
       // DAMAGE NEEDS TO BE TUNED
       takeDamage(10f);
     }
-    else if (collision.gameObject.GetComponent<Enemy>())
-    {
-      // take damage proportional to speed of collision and mass of both objects 
-      // DAMAGE NEEDS TO BE TUNED
-      takeDamage(10f);
-    }
     else if (collision.gameObject.GetComponent<Projectile>())
     {
       // take damage based on type of projectile
-      
-    }
-    else if (collision.gameObject.GetComponent<Pickup>())
-    {
-      // determine what type of pickup  
       
     }
   }

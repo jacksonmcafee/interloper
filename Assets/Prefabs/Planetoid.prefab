@@ -164,9 +164,9 @@ MonoBehaviour:
   rigbod: {fileID: 9090696476641066230}
   is_gravity_affected_f: 1
   is_gravity_biased_f: 0
-  initial_velocity: {x: 0, y: 0, z: 0}
-  apply_initial_velocity: 0
+  initial_velocity: {x: 3, y: -3, z: 0}
+  apply_initial_velocity: 1
   debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
   explosionPrefab: {fileID: 1597105032989865925, guid: 2e28485c19c4961469297912cbad0606, type: 3}
   destroyed: 0
-  health: 0
+  health: 20
