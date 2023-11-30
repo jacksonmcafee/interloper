@@ -125,7 +125,7 @@ Rigidbody2D:
   m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -200,11 +200,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigbod: {fileID: 0}
-  is_gravity_affected_f: 0
+  is_gravity_affected_f: 1
   is_gravity_biased_f: 0
-  initial_velocity: {x: 0, y: 0, z: 0}
-  apply_initial_velocity: 0
-  debrisPrefab: {fileID: 0}
-  explosionPrefab: {fileID: 0}
+  initial_velocity: {x: 3, y: -3, z: 0}
+  apply_initial_velocity: 1
+  debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
+  explosionPrefab: {fileID: 4617146559593330233, guid: 07c39ab0c1bf0014faae36121efa93ea, type: 3}
   destroyed: 0
-  health: 0
+  health: 40

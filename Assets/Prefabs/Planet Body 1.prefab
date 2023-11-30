@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: -611140501942450610}
   - component: {fileID: 6666614829111859932}
   - component: {fileID: -722781817029982357}
-  - component: {fileID: -515558385612044867}
-  m_Layer: 0
+  - component: {fileID: 3316686324694586985}
+  m_Layer: 11
   m_Name: Planet Body 1
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ Rigidbody2D:
   m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -187,7 +187,7 @@ MonoBehaviour:
   attractionForce: 10
   tetheredTo: {fileID: 0}
   isTethered: 0
---- !u!114 &-515558385612044867
+--- !u!114 &3316686324694586985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,9 +196,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3911478937228672608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1075c755d56453c4e9bd246d82ce4707, type: 3}
+  m_Script: {fileID: 11500000, guid: 488eedc493d00d64a929686d5b055824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractionForce: 10
-  tetheredTo: {fileID: 0}
-  isTethered: 0
+  rigbod: {fileID: -611140501942450610}
+  is_gravity_affected_f: 1
+  is_gravity_biased_f: 0
+  initial_velocity: {x: 0, y: 0, z: 0}
+  apply_initial_velocity: 1
+  debrisPrefab: {fileID: 1412911217987195021, guid: 779493f37e5d0b54486d4e29c075ddb5, type: 3}
+  explosionPrefab: {fileID: 1597105032989865925, guid: 2e28485c19c4961469297912cbad0606, type: 3}
+  destroyed: 0
+  health: 20
