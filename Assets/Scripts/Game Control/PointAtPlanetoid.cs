@@ -5,7 +5,7 @@ using UnityEngine;
 public class PointAtPlanetoid : MonoBehaviour
 {
     public string planetoidTag = "Planet";
-    public float rotationSpeed = 3f;
+    public float rotationSpeed = 10f;
     public GameObject ship;
 
     // Update is called once per frame
