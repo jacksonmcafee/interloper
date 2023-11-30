@@ -68,6 +68,11 @@ public class Planetoid : CelestialBody
                 destroyed = true;
                 Destroy(gameObject);
             }
+            else if(collision.gameObject.tag == "Star")
+            {
+                destroyed = true;
+                Destroy(gameObject);
+            }
             else if(collision.gameObject.tag == "Projectile")
             {
                 Projectile pscript = collision.gameObject.GetComponent<Projectile>();
