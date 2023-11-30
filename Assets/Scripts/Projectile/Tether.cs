@@ -11,12 +11,13 @@ public class Tether : Projectile
 
     // flag if the tether is attached to a single planet
     private bool isTethered = false;
+
     // keep track of attached planets
     private static GameObject firstBody;
     private static GameObject secondBody;
     private GameObject anchorFlag; //the flag that goes on the first tethered planet
 
-    //line renderer
+    // line renderer
     private LineRenderer lr;
 
     void Start()
@@ -82,24 +83,5 @@ public class Tether : Projectile
         {
             Destroy(gameObject); // Destroy the tether if it collides with other objects
         }
-    }
-    
-    private void AttractBodies()
-    {
-        Debug.Log("Attracting bodies...");
-        
-        Vector3 attractionDirection = (secondBody.transform.position - firstBody.transform.position).normalized;
-        float forceMagnitude = attractionForce / Mathf.Pow(Vector3.Distance(secondBody.transform.position, firstBody.transform.position), 2);
-        
-        if(!firstBody.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb1))
-            Debug.LogWarning("First body has no RigidBody2D!", firstBody);
-        else
-            rb1.AddForce(attractionDirection * forceMagnitude);
-            
-        
-        if(!secondBody.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb2))
-            Debug.LogWarning("Second body has no RigidBody2D!", secondBody);
-        else
-            rb2.AddForce(-attractionDirection * forceMagnitude);
     }
 }
