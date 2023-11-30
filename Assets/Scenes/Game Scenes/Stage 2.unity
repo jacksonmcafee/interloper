@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: ship
       value: 
       objectReference: {fileID: 8236836201305248517}
+    - target: {fileID: 9069935833392611572, guid: eb75cde4ff4c44e43a143d6a283b5d5c, type: 3}
+      propertyPath: m_text
+      value: Stage Two
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

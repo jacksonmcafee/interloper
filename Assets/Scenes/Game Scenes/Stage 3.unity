@@ -568,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 1516898888}
     - target: {fileID: 3640817848782921620, guid: eb75cde4ff4c44e43a143d6a283b5d5c, type: 3}
       propertyPath: stageTextString
-      value: Stage Three
+      value: Final Stage
       objectReference: {fileID: 0}
     - target: {fileID: 3640817848782921620, guid: eb75cde4ff4c44e43a143d6a283b5d5c, type: 3}
       propertyPath: targetTransform
@@ -674,6 +674,10 @@ PrefabInstance:
       propertyPath: ship
       value: 
       objectReference: {fileID: 1037860227}
+    - target: {fileID: 9069935833392611572, guid: eb75cde4ff4c44e43a143d6a283b5d5c, type: 3}
+      propertyPath: m_text
+      value: Final Stage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1005,6 +1009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 759145526082399152, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
+      propertyPath: targetScene
+      value: Win
+      objectReference: {fileID: 0}
     - target: {fileID: 6725053358958304988, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
       propertyPath: m_Name
       value: Singularity
