@@ -3,11 +3,20 @@ using UnityEngine;
 public class ToolSwapping : MonoBehaviour
 {
     public int currentTool = 0;
+    public GameObject LaserBoxSelect;
+    public GameObject MissileBoxSelect;
+    public GameObject TetherBoxSelect;
+    public GameObject GravitonBoxSelect;
 
     // Start is called before the first frame update
     void Start()
     {
         SwapTool();
+        LaserBoxSelect.SetActive(false);
+        MissileBoxSelect.SetActive(false);
+        TetherBoxSelect.SetActive(false);
+        GravitonBoxSelect.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -36,6 +45,23 @@ public class ToolSwapping : MonoBehaviour
         {
             SwapTool();
         }
+
+        if(currentTool == 0)
+            LaserBoxSelect.SetActive(true);
+        else
+            LaserBoxSelect.SetActive(false);
+        if (currentTool == 1)
+            MissileBoxSelect.SetActive(true);
+        else
+            MissileBoxSelect.SetActive(false);
+        if (currentTool == 2)
+            TetherBoxSelect.SetActive(true);
+        else
+            TetherBoxSelect.SetActive(false);
+        if (currentTool == 3)
+            GravitonBoxSelect.SetActive(true);
+        else
+            GravitonBoxSelect.SetActive(false);
     }
 
     void SwapTool ()
