@@ -417,7 +417,7 @@ MonoBehaviour:
   scoringScript: {fileID: 0}
   stageText: {fileID: 2022782948}
   stageTextString: Stage Three
-  fadeDuration: 3
+  fadeDuration: 5
 --- !u!1001 &496912840
 PrefabInstance:
   m_ObjectHideFlags: 0

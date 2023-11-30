@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
 
     public TMP_Text stageText;
     public string stageTextString;
-    public float fadeDuration = 3f;
+    public float fadeDuration = 5f;
 
     void Start()
     {
