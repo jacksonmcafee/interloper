@@ -349,7 +349,7 @@ RectTransform:
   - {fileID: 1652630379}
   - {fileID: 336727945}
   - {fileID: 2100309442}
-  - {fileID: 1784055757}
+  - {fileID: 765894193}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -911,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 4551975688179024507, guid: 1e0263c4ac92e2c469d1a253a284c18d, type: 3}
       propertyPath: ship
       value: 
-      objectReference: {fileID: 1532704456}
+      objectReference: {fileID: 8236836201305248517}
     - target: {fileID: 4551975688179024507, guid: 1e0263c4ac92e2c469d1a253a284c18d, type: 3}
       propertyPath: rotationSpeed
       value: 10
@@ -925,6 +925,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e0263c4ac92e2c469d1a253a284c18d, type: 3}
+--- !u!224 &765894193 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3265045175723194210, guid: 1e0263c4ac92e2c469d1a253a284c18d, type: 3}
+  m_PrefabInstance: {fileID: 765894192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933646468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +1990,8 @@ PrefabInstance:
       propertyPath: is_gravity_biased_f
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 759145526082399152, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2054,6 +2060,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31ba1f3bf765df144b344adb3343d30d, type: 3}
+--- !u!1 &8236836201305248517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4830029635044934926, guid: 31ba1f3bf765df144b344adb3343d30d, type: 3}
+  m_PrefabInstance: {fileID: 8236836201305248516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8528599019715460262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4738959491617519875, guid: 31ba1f3bf765df144b344adb3343d30d, type: 3}
@@ -2080,4 +2091,3 @@ SceneRoots:
   - {fileID: 686815247}
   - {fileID: 312861125}
   - {fileID: 762610519}
-  - {fileID: 1751320872}

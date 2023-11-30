@@ -1631,7 +1631,8 @@ PrefabInstance:
       propertyPath: is_gravity_biased_f
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 759145526082399152, guid: 2251d88b0995a2b44838ed3c5849ec83, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
