@@ -17,13 +17,15 @@ public class Debris : CelestialBody
         {
             //Debug.Log("hit planet...");
             // add mass to other rigidbody
-            collision.otherRigidbody.mass += 0.5f;
+            collision.otherRigidbody.mass += 1;
             // Debug.Log(collision.otherRigidbody.mass);
             // Debug.Log(collision.relativeVelocity.magnitude);
             Destroy(gameObject);
         }
         else if(collision.gameObject.tag == "Singularity")
         {
+            collision.otherRigidbody.mass += 1;
+            collision.gameObject.transform.localScale += new Vector3(rigbod.mass/(10*Mathf.Sqrt(rigbod.mass)), rigbod.mass/(10*Mathf.Sqrt(rigbod.mass)), 0);
             //Debug.Log("hit THE SINGULARITY...");
             Destroy(gameObject);
         }
