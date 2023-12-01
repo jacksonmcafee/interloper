@@ -3,6 +3,10 @@
 Interloper is a 2D arcade game set in space. 
 It was developed for the Fall 2023 section of CEN4090L (Software Engineering I Lab).
 
+## Deployment
+
+To play the game, you can find a runnable version under `Interloper/Interloper v1.0/InterloperTest.exe`
+
 ## Authors
 
 - [@jacksonmcafee](https://www.github.com/jacksonmcafee)
