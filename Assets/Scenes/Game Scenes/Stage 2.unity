@@ -788,6 +788,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gas Giant 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6204890950582658818, guid: 5fc2b12907c1d1644950ea3edf3d8da8, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204890950582658818, guid: 5fc2b12907c1d1644950ea3edf3d8da8, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 6388174969846568705, guid: 5fc2b12907c1d1644950ea3edf3d8da8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
