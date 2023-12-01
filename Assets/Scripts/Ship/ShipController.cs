@@ -53,11 +53,6 @@ public class ShipController : MonoBehaviour
       // DAMAGE NEEDS TO BE TUNED
       takeDamage(10f);
     }
-    else if (collision.gameObject.GetComponent<Projectile>())
-    {
-      // take damage based on type of projectile
-      
-    }
   }
 
   // handle damage taken to shields + health
