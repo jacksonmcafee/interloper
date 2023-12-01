@@ -57,7 +57,7 @@ public class Tether : Projectile
                     firstBody = other.gameObject;
                     anchorFlag = Instantiate(FlagPrefab, other.transform.position, Quaternion.identity, other.transform);
                 }
-                else if (firstBody != other.gameObject && secondBody == null)
+                else if (firstBody != other.gameObject && firstBody != null && secondBody == null)
                 {
                     secondBody = other.gameObject;
                     lr.SetPosition(0, firstBody.transform.position);
@@ -70,6 +70,11 @@ public class Tether : Projectile
                     secondBody.GetComponent<PlanetController>().isTethered = true;
 
                     isTethered = true;
+
+                    if (anchorFlag) 
+                    {
+                      Destroy(anchorFlag);
+                    }
                 }
                 else
                 {

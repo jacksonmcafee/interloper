@@ -115,7 +115,7 @@ public class Planetoid : CelestialBody
         updebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.up, ForceMode2D.Impulse);
         downdebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.down, ForceMode2D.Impulse);
 
-        if(rigbod.mass > 0.5) //add 2 debris w/ symmetry
+        if(rigbod.mass > 2) //add 2 debris w/ symmetry
         {
             Vector3 rightposshift = collision.otherRigidbody.position + Vector2.right;
             Vector3 leftposshift = collision.otherRigidbody.position + Vector2.left;
@@ -125,7 +125,7 @@ public class Planetoid : CelestialBody
             leftdebris.GetComponent<Rigidbody2D>().AddForce(collision.relativeVelocity.normalized + Vector2.left, ForceMode2D.Impulse);
         }
         
-        if(rigbod.mass > 1) //add 4 debris w/ symmetry
+        if(rigbod.mass > 5) //add 4 debris w/ symmetry
         {
             Vector3 uprightposshift = collision.otherRigidbody.position + (Vector2.up + Vector2.right).normalized;
             Vector3 downrightposshift = collision.otherRigidbody.position + (Vector2.down + Vector2.right).normalized;

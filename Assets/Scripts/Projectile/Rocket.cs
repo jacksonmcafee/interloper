@@ -19,10 +19,4 @@ public class Rocket : Projectile
     yield return new WaitForSeconds(despawnTime);
     Destroy(gameObject);
   }
-
-  /*public override void HandleCollision(Collider2D other)
-  {
-    // handle Rocket collision behavior
-
-  }*/
 }
